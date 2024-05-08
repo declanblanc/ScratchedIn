@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "ScratchedIn",
+  "description": "Prevents users from visiting scratch explore page or using the search bar. Inteded for theCoderSchool to limit student distractions",
+  "version": "1.0",
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scratch.mit.edu/*",
+        "http://scratch.mit.edu/*"
+      ],
+      "js": ["scripts/content.js"]
+      
+    }
+  ]
+}
