@@ -1,0 +1,2 @@
+# ScratchedIn
+ScratchedIn is a Chrome web extension that I developed to prevent students in coding classes from becoming distracted by the fun games availabled on MIT's Scratch website. The extension just checks what pages are loaded and either removes certain buttons from the pages, or redirects the user when they try to load particular pages.
